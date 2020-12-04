@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <title>SML - Abogados</title>
+</head>
+<body>
+
+    <section class="contacto contenedor-contacto">
+
+        <form class="formulario" action="contacto.php" method="POST" data-netlify="true"> 
+
+            <div class="formulario__contenedor">
+    
+
+                <div class="formulario__grupo nombre">
+                    <input type="text" name="nombre" id="" placeholder="Nombre" maxlength="30" required>
+                </div>    
+                <div class="formulario__grupo email">
+                    <input type="email" name="email" id="" placeholder="E-mail" required>
+                </div>  
+                <div class="formulario__grupo telefono">
+                    <input type="number" name="telefono" id="" placeholder="Telefono" required>
+                </div>  
+                <div class="formulario__grupo textarea">  
+                    <textarea name="consulta" id="" rows="3" placeholder="Consulta" maxlength="300" required></textarea>
+                </div>
+
+                <button type="submit" class="formulario__boton">Enviar</button>
+
+                <!-- <a href="whatsapp://send?text=&phone=999999999" target="_blank" class="btn-whatsapp"><img src="img/whatsapp-boton.png" alt=""></a> -->
+
+                <a href="whatsapp://send?text=&phone=999999999" target="_blank" class="btn-whatsapp"><i class="fab fa-whatsapp"></i>CONTACTANOS POR WHATSAPP</a>
+
+    
+            </div>
+    
+        </form>
+
+        <div class="contacto__datos">
+            <p>Laprida 177, piso 2°, Of."6", (1642) San Isidro, Prov. Bs. As. <br/>
+            Tel. 5368-0453/0529<br/>
+            Cel. +5411 68524426</p>
+        </div>
+    
+    </section>
+
+    <section class="home contenedor-home">
+
+        <div class="home__img">
+            <img src="img/SMLsinfondo.png" alt="logo">
+        </div>
+
+        <div class="home__info">
+            <h2 class="home__titulo">EL ESTUDIO</h2>
+
+            <p class="home__descripcion">Somos un estudio boutique ubicado en San Isidro especializado en derecho Civil, Comercial y Laboral. Contamos con Matrículas en Provincia de Buenos Aires y Capital Federal.</p>
+        </div>
+    </section>
+
+    <section class="servicios contenedor-servicios">
+
+        <h2 class="servicios__titulo">SERVICIOS</h2>
+
+        <div class="servicios__item">
+            <div><i class="fas fa-user-tie"></i></div>
+            <h3>Civil</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat aliquid asperiores ipsum commodi dolores autem quam similique blanditiis necessitatibus iusto quas magni recusandae nemo eum accusamus aut, provident delectus maxime.</p>
+        </div>
+        <div class="servicios__item">
+            <div><i class="fas fa-balance-scale"></i></div>
+            <h3>Comercial</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat aliquid asperiores ipsum commodi dolores autem quam similique blanditiis necessitatibus iusto quas magni recusandae nemo eum accusamus aut, provident delectus maxime.</p>
+        </div>
+        <div class="servicios__item">
+            <div><i class="fas fa-gavel"></i></div>
+            <h3>Laboral</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat aliquid asperiores ipsum commodi dolores autem quam similique blanditiis necessitatibus iusto quas magni recusandae nemo eum accusamus aut, provident delectus maxime.</p>
+        </div>
+
+    </section>
+
+    <section class="clientes contenedor-clientes">
+
+        <div class="clientes__card">
+
+            <h2 class="clientes__titulo">CLIENTES</h2>
+
+            <ul>
+                <li>Estoicos Financial Group SRL</li>
+                <li>CIPSE Construcciones SRL</li>
+                <li>Kankay Grills SAS</li>
+                <li>Violeta Massey Pattiserie - Recoleta</li>
+                <li>Industrias Pampa SRL</li>
+                <li>Empresas Rodobens SA</li>
+                <li>BBVA</li>
+                <li>Rombo Compañía Financiera</li>
+                <li>Volkswagen Financial Services</li>
+                <li>Lubricantes Munro SA</li>
+                <li>Wulp Pagos Electrónicos SRL</li>
+                <li>LATeam Foods</li>
+                <li>Clientes particulares</li>
+            </ul>
+        </div>
+    </section>
+
+    <footer class="footer">
+
+        <div class="footer__datos">
+            <p>Laprida 177, piso 2°, Of."6", (1642) San Isidro, Prov. Bs. As. <br/>
+            Tel. 5368-0453/0529<br/>
+            Cel. +5411 68524426</p>
+        </div>
+
+        <div class="footer__img">
+            <img src="img/SMLsinfondo.png" alt="logo">
+        </div>
+
+    </footer>
+
+    
+</body>
+</html>

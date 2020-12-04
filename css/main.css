@@ -1,0 +1,272 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background: #d5d1d1;
+}
+
+button,
+a,
+input,
+textarea {
+  outline: none;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.contenedor-home {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: #efefef;
+  padding: 30px 0 45px 0;
+}
+
+.home__img {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+.home__img img {
+  width: 200px;
+}
+
+.home__info {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.home__info h2 {
+  font-size: 25px;
+  margin: 20px 0;
+  font-weight: 400;
+}
+.home__info p {
+  font-size: 20px;
+  text-align: center;
+}
+
+.contenedor-servicios {
+  width: 100%;
+  height: 100%;
+  padding-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: #2b2924;
+  color: #ffffff;
+}
+.contenedor-servicios h2 {
+  font-size: 25px;
+  margin: 45px 0;
+  font-weight: 400;
+}
+
+.servicios__item {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.servicios__item div {
+  width: 80px;
+  height: 80px;
+  background: #fab529;
+  padding: 25px;
+  margin: 15px 0;
+  border-radius: 50%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.servicios__item div i {
+  font-size: 45px;
+}
+.servicios__item h3 {
+  font-size: 20px;
+  font-weight: normal;
+}
+.servicios__item p {
+  font-size: 16px;
+  font-weight: normal;
+  margin: 15px 0;
+  text-align: center;
+}
+
+.contenedor-clientes {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-image: url(../img/clientes.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.clientes__card {
+  width: 90%;
+  background: rgba(0, 0, 0, 0.6);
+  margin: 30px 0;
+  color: #ffffff;
+}
+.clientes__card h2 {
+  font-size: 25px;
+  margin: 45px 0;
+  font-weight: 400;
+  text-align: center;
+}
+.clientes__card ul {
+  margin: 0 50px 20px 50px;
+  list-style-type: square;
+}
+
+.contenedor-contacto {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-image: url(../img/law-firm.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.formulario {
+  width: 90%;
+  background: rgba(0, 0, 0, 0.6);
+  margin: 50px 0 0 0;
+  padding: 20px 0;
+}
+
+.formulario__contenedor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.formulario__grupo {
+  width: 90%;
+}
+.formulario__grupo input {
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  font-size: 16px;
+}
+.formulario__grupo textarea {
+  width: 100%;
+  height: 85px;
+  margin: 10px 0;
+  padding: 10px;
+  font-family: "Roboto", sans-serif;
+  resize: none;
+  font-size: 16px;
+}
+
+.formulario__boton {
+  width: 90%;
+  height: 45px;
+  background: #fab529;
+  border: none;
+  border-radius: 5px;
+  margin: 10px 0;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+.formulario__boton:hover {
+  background: #b18122;
+}
+
+.btn-whatsapp {
+  width: 250px;
+  margin: 10px 0;
+  padding: 10px;
+  background: #25D366;
+  color: #fff;
+  font-size: 12px;
+  text-decoration: none;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+.btn-whatsapp i {
+  font-size: 25px;
+  margin-right: 10px;
+}
+.btn-whatsapp:hover {
+  background: #075E54;
+}
+
+.contacto__datos {
+  width: 90%;
+  margin: 20px 0;
+}
+.contacto__datos p {
+  color: #ffffff;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 10px 50px;
+  text-align: center;
+  font-size: 15px;
+}
+
+.footer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  background: #d5d1d1;
+}
+
+.footer__datos {
+  width: 70%;
+  color: #575656;
+  margin: 30px 0 30px 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer__datos p {
+  font-size: 14px;
+}
+
+.footer__img {
+  width: 25%;
+  margin: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer__img img {
+  width: 90px;
+}
+
+/*# sourceMappingURL=main.css.map */
