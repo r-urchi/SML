@@ -13,6 +13,14 @@
 
     <section class="contacto contenedor-contacto">
 
+        <div class="nav">
+            <div class="nav__logo">
+                <img src="img/SMLsinfondo.png" alt="logo">
+            </div> 
+
+            <a href="#" class="nav__boton"><span><i class="fas fa-bars"></i></span></a>
+        </div>
+
         <form class="formulario" action="contacto.php" method="POST" data-netlify="true"> 
 
             <div class="formulario__contenedor">
@@ -25,15 +33,13 @@
                     <input type="email" name="email" id="" placeholder="E-mail" required>
                 </div>  
                 <div class="formulario__grupo telefono">
-                    <input type="number" name="telefono" id="" placeholder="Telefono" required>
+                    <input type="number" name="telefono" id="" placeholder="Teléfono" required>
                 </div>  
                 <div class="formulario__grupo textarea">  
                     <textarea name="consulta" id="" rows="3" placeholder="Consulta" maxlength="300" required></textarea>
                 </div>
 
                 <button type="submit" class="formulario__boton">Enviar</button>
-
-                <!-- <a href="whatsapp://send?text=&phone=999999999" target="_blank" class="btn-whatsapp"><img src="img/whatsapp-boton.png" alt=""></a> -->
 
                 <a href="whatsapp://send?text=&phone=999999999" target="_blank" class="btn-whatsapp"><i class="fab fa-whatsapp"></i>CONTACTANOS POR WHATSAPP</a>
 
