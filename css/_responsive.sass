@@ -1,0 +1,67 @@
+@media screen and (min-width: 950px)
+    .nav, .foot, .home__img, .clientes__mobile, .clientes__titulo, .footer__datos
+        display: none
+
+    .contenedor-home, .contenedor-servicios, .contenedor-clientes
+        height: 500px
+    
+    .formulario
+        margin-bottom: 35px
+
+    .home__info
+        align-items: flex-start
+
+    .contenedor-servicios h2
+        width: 80%
+
+    .servicios__item-contenedor
+        width: 80%
+        flex-direction: row
+        .servicios__item
+            width: 30%
+            margin: 0 10px
+
+    .clientes__card
+        width: 80%
+
+    .clientes__desktop
+        display: flex
+        justify-content: center
+        height: 250px
+        padding: 35px 0 0 0
+        color: #efefef
+        ul li
+            padding: 3px
+
+    .clientes__titulo-desktop
+        width: 80%
+        font-size: 25px
+        font-weight: 400
+        margin-top: 35px
+        color: #efefef
+
+    .footer
+        display: flex
+        justify-content: center
+        align-items: center
+        .footer__contenedor
+            width: 80%
+            flex-direction: row-reverse
+            justify-content: flex-end
+            .footer__datos-desktop
+                display: flex
+                justify-content: flex-start
+                align-items: center
+                width: 70%
+                margin: 0
+                color: #575656
+                p
+                    margin: 0 10px 0 10px
+            .footer__img
+                width: 150px
+                margin: 30px 0
+
+@media screen and (max-width: 950px)
+    .clientes__titulo-desktop, .footer__datos-desktop
+        display: none
+

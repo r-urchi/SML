@@ -11,7 +11,8 @@
 </head>
 <body>
 
-    <section class="contacto contenedor-contacto">
+
+    <div class="contacto contenedor-contacto">
 
         <div class="nav">
             <div class="nav__logo">
@@ -19,6 +20,11 @@
             </div> 
 
             <a href="#" class="nav__boton"><span><i class="fas fa-bars"></i></span></a>
+        </div>
+
+
+        <div class="contacto__datos">
+            <p>CONSULTANOS POR ASESORAMIENTO PERSONALIZADO.</p>
         </div>
 
         <form class="formulario" action="contacto.php" method="POST" data-netlify="true"> 
@@ -48,13 +54,13 @@
     
         </form>
 
-        <div class="contacto__datos">
-            <p>Laprida 177, piso 2°, Of."6", (1642) San Isidro, Prov. Bs. As. <br/>
+        <div class="contacto__datos foot">
+            <p>Laprida 177, piso 2°, Of."6", <br/> (1642) San Isidro, Prov. Bs. As. <br/>
             Tel. 5368-0453/0529<br/>
             Cel. +5411 68524426</p>
         </div>
     
-    </section>
+    </div>
 
     <section class="home contenedor-home">
 
@@ -63,9 +69,9 @@
         </div>
 
         <div class="home__info">
-            <h2 class="home__titulo">EL ESTUDIO</h2>
+            <h2 class="home__titulo">NUESTRO ESTUDIO</h2>
 
-            <p class="home__descripcion">Somos un estudio boutique ubicado en San Isidro especializado en derecho Civil, Comercial y Laboral. Contamos con Matrículas en Provincia de Buenos Aires y Capital Federal.</p>
+            <p class="home__descripcion">Somos un estudio jurídico boutique especializado en derecho Civil, Comercial y Laboral. Nos caracterizamos por brindar un servicio personalizado de excelencia. Nuestros Pilares son el profesionalismo, la cercanía y la confianza con nuestros clientes. Contamos con Matrículas en Provincia de Buenos Aires y Capital Federal.</p>
         </div>
     </section>
 
@@ -73,31 +79,35 @@
 
         <h2 class="servicios__titulo">SERVICIOS</h2>
 
-        <div class="servicios__item">
-            <div><i class="fas fa-user-tie"></i></div>
-            <h3>Civil</h3>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat aliquid asperiores ipsum commodi dolores autem quam similique blanditiis necessitatibus iusto quas magni recusandae nemo eum accusamus aut, provident delectus maxime.</p>
-        </div>
-        <div class="servicios__item">
-            <div><i class="fas fa-balance-scale"></i></div>
-            <h3>Comercial</h3>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat aliquid asperiores ipsum commodi dolores autem quam similique blanditiis necessitatibus iusto quas magni recusandae nemo eum accusamus aut, provident delectus maxime.</p>
-        </div>
-        <div class="servicios__item">
-            <div><i class="fas fa-gavel"></i></div>
-            <h3>Laboral</h3>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat aliquid asperiores ipsum commodi dolores autem quam similique blanditiis necessitatibus iusto quas magni recusandae nemo eum accusamus aut, provident delectus maxime.</p>
+        <div class="servicios__item-contenedor">
+            <div class="servicios__item">
+                <div><i class="fas fa-user-tie"></i></div>
+                <h3>Civil</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat aliquid asperiores ipsum commodi dolores autem quam similique blanditiis necessitatibus iusto quas magni recusandae nemo eum accusamus aut, provident delectus maxime.</p>
+            </div>
+            <div class="servicios__item">
+                <div><i class="fas fa-balance-scale"></i></div>
+                <h3>Comercial</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat aliquid asperiores ipsum commodi dolores autem quam similique blanditiis necessitatibus iusto quas magni recusandae nemo eum accusamus aut, provident delectus maxime.</p>
+            </div>
+            <div class="servicios__item">
+                <div><i class="fas fa-gavel"></i></div>
+                <h3>Laboral</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat aliquid asperiores ipsum commodi dolores autem quam similique blanditiis necessitatibus iusto quas magni recusandae nemo eum accusamus aut, provident delectus maxime.</p>
+            </div>
         </div>
 
     </section>
 
     <section class="clientes contenedor-clientes">
 
+        <h2 class="clientes__titulo-desktop">CLIENTES</h2>
+
         <div class="clientes__card">
 
             <h2 class="clientes__titulo">CLIENTES</h2>
 
-            <ul>
+            <ul class="clientes__mobile">
                 <li>Estoicos Financial Group SRL</li>
                 <li>CIPSE Construcciones SRL</li>
                 <li>Kankay Grills SAS</li>
@@ -112,19 +122,49 @@
                 <li>LATeam Foods</li>
                 <li>Clientes particulares</li>
             </ul>
+
+            <div class="clientes__desktop">
+                <ul >
+                    <li>Estoicos Financial Group SRL</li>
+                    <li>CIPSE Construcciones SRL</li>
+                    <li>Kankay Grills SAS</li>
+                    <li>Violeta Massey Pattiserie - Recoleta</li>
+                    <li>Industrias Pampa SRL</li>
+                    <li>Empresas Rodobens SA</li>
+                    <li>BBVA</li>
+                </ul>
+                <ul>
+                    <li>Rombo Compañía Financiera</li>
+                    <li>Volkswagen Financial Services</li>
+                    <li>Lubricantes Munro SA</li>
+                    <li>Wulp Pagos Electrónicos SRL</li>
+                    <li>LATeam Foods</li>
+                    <li>Clientes particulares</li>
+                </ul>
+            </div>
         </div>
     </section>
 
     <footer class="footer">
 
-        <div class="footer__datos">
-            <p>Laprida 177, piso 2°, Of."6", (1642) San Isidro, Prov. Bs. As. <br/>
-            Tel. 5368-0453/0529<br/>
-            Cel. +5411 68524426</p>
-        </div>
+        <div class="footer__contenedor">
 
-        <div class="footer__img">
-            <img src="img/SMLsinfondo.png" alt="logo">
+            <div class="footer__datos">
+                <p>Laprida 177, piso 2°, Of."6", (1642) San Isidro, Prov. Bs. As. <br/>
+                Tel. 5368-0453/0529<br/>
+                Cel. +5411 68524426</p>
+            </div>
+
+            <div class="footer__datos-desktop">
+                <p>Laprida 177, piso 2°, Of."6", <br> (1642) San Isidro, Prov. Bs. As. </p>
+                <p>Tel. 5368-0453/0529 <br>
+                Cel. +5411 68524426</p>
+            </div>
+
+            <div class="footer__img">
+                <img src="img/SMLsinfondo.png" alt="logo">
+            </div>
+
         </div>
 
     </footer>
