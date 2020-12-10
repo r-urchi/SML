@@ -11,7 +11,18 @@
 </head>
 <body>
 
-    <header class="header">
+    <nav class="nav-desktop">
+        <ul class="nav-desktop__lista">
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#estudio">NUESTRO ESTUDIO</a></li>
+            <li><a href="#servicios">SERVICIOS</a></li>
+            <li><a href="#clientes">CLIENTES</a></li>
+            <li><a href="#contacto">CONTACTO</a></li>
+        </ul>
+    </nav>
+
+    <header class="header" id="home">
+
         <div class="portada contenedor-portada">
             <div class="portada__img">
                 <img src="img/logo-alta.png" alt="logo">
@@ -75,20 +86,20 @@
         </div>
     </header>
 
-    <section class="home contenedor-home">
+    <section class="estudio contenedor-estudio" id="estudio">
 
-        <div class="home__img">
+        <div class="estudio__img">
             <img src="img/logo-alta.png" alt="logo">
         </div>
 
-        <div class="home__info">
-            <h2 class="home__titulo">NUESTRO ESTUDIO</h2>
+        <div class="estudio__info">
+            <h2 class="estudio__titulo">NUESTRO ESTUDIO</h2>
 
-            <p class="home__descripcion">Somos un estudio jurídico boutique especializado en derecho Civil, Comercial y Laboral. Nos caracterizamos por brindar un servicio personalizado de excelencia. Nuestros Pilares son el profesionalismo, la cercanía y la confianza con nuestros clientes. Contamos con Matrículas en Provincia de Buenos Aires y Capital Federal.</p>
+            <p class="estudio__descripcion">Somos un estudio jurídico boutique especializado en derecho Civil, Comercial y Laboral. Nos caracterizamos por brindar un servicio personalizado de excelencia. Nuestros Pilares son el profesionalismo, la cercanía y la confianza con nuestros clientes. Contamos con Matrículas en Provincia de Buenos Aires y Capital Federal.</p>
         </div>
     </section>
 
-    <section class="servicios contenedor-servicios">
+    <section class="servicios contenedor-servicios" id="servicios">
 
         <h2 class="servicios__titulo">SERVICIOS</h2>
 
@@ -112,7 +123,7 @@
 
     </section>
 
-    <section class="clientes contenedor-clientes">
+    <section class="clientes contenedor-clientes" id="clientes">
 
         <h2 class="clientes__titulo-desktop">CLIENTES</h2>
 
@@ -158,12 +169,12 @@
         </div>
     </section>
 
-    <footer class="footer">
+    <footer class="footer" id="contacto">
 
         <div class="footer__contenedor">
 
             <div class="footer__datos">
-                <p>Laprida 177, piso 2°, Of."6", (1642) San Isidro, Prov. Bs. As. <br/>
+                <p>Laprida 177, piso 2°, Of."6", <br> (1642) San Isidro, Prov. Bs. As. <br/>
                 Tel. 5368-0453/0529<br/>
                 Cel. +5411 68524426</p>
             </div>
