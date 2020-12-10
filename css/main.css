@@ -26,6 +26,20 @@ input[type=number]::-webkit-outer-spin-button {
   margin: 0;
 }
 
+.ir-arriba {
+  display: none;
+  background: none;
+  font-size: 20px;
+  color: #fab529;
+  cursor: pointer;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+.ir-arriba i {
+  font-size: 45px;
+}
+
 .nav-desktop {
   width: 100%;
   height: 80px;
