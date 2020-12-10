@@ -11,61 +11,74 @@
 </head>
 <body>
 
-
-    <div class="contacto contenedor-contacto">
-
-        <div class="nav">
-            <div class="nav__logo">
-                <img src="img/SMLsinfondo.png" alt="logo">
-            </div> 
-
-            <a href="#" class="nav__boton"><span><i class="fas fa-bars"></i></span></a>
-        </div>
-
-
-        <div class="contacto__datos">
-            <p>CONSULTANOS POR ASESORAMIENTO PERSONALIZADO.</p>
-        </div>
-
-        <form class="formulario" action="contacto.php" method="POST" data-netlify="true"> 
-
-            <div class="formulario__contenedor">
-    
-
-                <div class="formulario__grupo nombre">
-                    <input type="text" name="nombre" id="" placeholder="Nombre" maxlength="30" required>
-                </div>    
-                <div class="formulario__grupo email">
-                    <input type="email" name="email" id="" placeholder="E-mail" required>
-                </div>  
-                <div class="formulario__grupo telefono">
-                    <input type="number" name="telefono" id="" placeholder="Teléfono" required>
-                </div>  
-                <div class="formulario__grupo textarea">  
-                    <textarea name="consulta" id="" rows="3" placeholder="Consulta" maxlength="300" required></textarea>
-                </div>
-
-                <button type="submit" class="formulario__boton">Enviar</button>
-
-                <a href="whatsapp://send?text=&phone=999999999" target="_blank" class="btn-whatsapp"><i class="fab fa-whatsapp"></i>CONTACTANOS POR WHATSAPP</a>
-
-    
+    <header class="header">
+        <div class="portada contenedor-portada">
+            <div class="portada__img">
+                <img src="img/logo-alta.png" alt="logo">
             </div>
-    
-        </form>
 
-        <div class="contacto__datos foot">
-            <p>Laprida 177, piso 2°, Of."6", <br/> (1642) San Isidro, Prov. Bs. As. <br/>
-            Tel. 5368-0453/0529<br/>
-            Cel. +5411 68524426</p>
+            <div class="portada__datos">
+                <p>Laprida 177, piso 2°, Of."6", <br/> (1642) San Isidro, Prov. Bs. As. <br/>
+                Tel. 5368-0453/0529<br/>
+                Cel. +5411 68524426</p>
+            </div>
         </div>
-    
-    </div>
+
+        <div class="contacto contenedor-contacto">
+
+            <div class="nav">
+                <div class="nav__logo">
+                    <img src="img/logo-alta.png" alt="logo">
+                </div> 
+
+                <a href="#" class="nav__boton"><span><i class="fas fa-bars"></i></span></a>
+            </div>
+
+
+            <div class="contacto__datos">
+                <p>CONSULTANOS POR ASESORAMIENTO PERSONALIZADO.</p>
+            </div>
+
+            <form class="formulario" action="contacto.php" method="POST" data-netlify="true"> 
+
+                <div class="formulario__contenedor">
+        
+
+                    <div class="formulario__grupo nombre">
+                        <input type="text" name="nombre" id="" placeholder="Nombre" maxlength="30" required>
+                    </div>    
+                    <div class="formulario__grupo email">
+                        <input type="email" name="email" id="" placeholder="E-mail" required>
+                    </div>  
+                    <div class="formulario__grupo telefono">
+                        <input type="number" name="telefono" id="" placeholder="Teléfono" required>
+                    </div>  
+                    <div class="formulario__grupo textarea">  
+                        <textarea name="consulta" id="" rows="3" placeholder="Consulta" maxlength="300" required></textarea>
+                    </div>
+
+                    <button type="submit" class="formulario__boton">Enviar</button>
+
+                    <a href="whatsapp://send?text=&phone=999999999" target="_blank" class="btn-whatsapp"><i class="fab fa-whatsapp"></i>CONTACTANOS POR WHATSAPP</a>
+
+        
+                </div>
+        
+            </form>
+
+            <div class="contacto__datos foot">
+                <p>Laprida 177, piso 2°, Of."6", <br/> (1642) San Isidro, Prov. Bs. As. <br/>
+                Tel. 5368-0453/0529<br/>
+                Cel. +5411 68524426</p>
+            </div>
+        
+        </div>
+    </header>
 
     <section class="home contenedor-home">
 
         <div class="home__img">
-            <img src="img/SMLsinfondo.png" alt="logo">
+            <img src="img/logo-alta.png" alt="logo">
         </div>
 
         <div class="home__info">
@@ -162,7 +175,7 @@
             </div>
 
             <div class="footer__img">
-                <img src="img/SMLsinfondo.png" alt="logo">
+                <img src="img/logo-alta.png" alt="logo">
             </div>
 
         </div>
