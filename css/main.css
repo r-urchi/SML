@@ -43,7 +43,7 @@ input[type=number]::-webkit-outer-spin-button {
 .nav-desktop {
   width: 100%;
   height: 80px;
-  display: flex;
+  display: none;
   justify-content: flex-end;
   align-items: center;
   background: #2b2924;
@@ -378,6 +378,10 @@ input[type=number]::-webkit-outer-spin-button {
 @media screen and (min-width: 950px) {
   .nav, .foot, .estudio__img, .clientes__mobile, .clientes__titulo, .footer__datos {
     display: none;
+  }
+
+  .nav-desktop {
+    display: flex;
   }
 
   .contenedor-estudio, .contenedor-servicios, .contenedor-clientes {
