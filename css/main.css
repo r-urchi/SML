@@ -67,6 +67,59 @@ input[type=number]::-webkit-outer-spin-button {
   color: #fab529;
 }
 
+.nav-mobile {
+  display: flex;
+  justify-content: flex-end;
+  height: 80px;
+  width: 100%;
+  align-items: center;
+  padding: 0 10px;
+}
+.nav-mobile .enlaces-mobile {
+  position: fixed;
+  background: rgba(0, 0, 0, 0.9);
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 70vh;
+  padding: 80px 0 20px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  clip-path: circle(0% at 100% 0);
+  font-weight: 300;
+  transition: ease-in-out 0.5s;
+}
+.nav-mobile .enlaces-mobile li {
+  list-style: none;
+}
+.nav-mobile .enlaces-mobile li a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: 0.3s all ease;
+}
+.nav-mobile .enlaces-mobile li a:hover {
+  color: #fab529;
+}
+.nav-mobile .hamburguer {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #2b2924;
+  border-radius: 10px;
+  z-index: 100;
+  cursor: pointer;
+}
+.nav-mobile .hamburguer i {
+  color: #efefef;
+  font-size: 30px;
+}
+.nav-mobile .menuDos {
+  clip-path: circle(150% at 100% 0);
+}
+
 .header {
   width: 100%;
   display: flex;
@@ -98,20 +151,6 @@ input[type=number]::-webkit-outer-spin-button {
 }
 .nav__logo img {
   width: 90%;
-}
-
-.nav__boton {
-  width: 50px;
-  height: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: #2b2924;
-  border-radius: 10px;
-}
-.nav__boton i {
-  color: #efefef;
-  font-size: 30px;
 }
 
 .contenedor-estudio {
