@@ -1,14 +1,30 @@
-let enlacesHeader = document.querySelector('.enlaces-mobile');
+const enlacesHeader = document.querySelector('.enlaces-mobile');
+const icono = document.querySelector('#iconoMenu');
+const hamburguer = document.querySelector('.hamburguer');
 
-document.querySelector('.hamburguer').addEventListener('click', function(){
+hamburguer.addEventListener('click', function(){
     enlacesHeader.classList.toggle('menuDos');
+    cambiarIcono()
 })
 
 window.addEventListener('scroll', function(){
-    enlacesHeader.classList.remove('menuDos')
+    enlacesHeader.classList.remove('menuDos');
+    cambiarIcono()
 })
 
-document.querySelector('.enlaces-mobile').addEventListener('click', function(){
-    enlacesHeader.classList.remove('menuDos')
+enlacesHeader.addEventListener('click', function(){
+    enlacesHeader.classList.remove('menuDos');
+    cambiarIcono()
 })
 
+function cambiarIcono(){
+    if(enlacesHeader.classList.contains('menuDos') == true){
+        icono.classList.remove('fa-bars');
+        icono.classList.add('fa-times-circle');
+        hamburguer.style.background = 'none';
+    } else{
+        icono.classList.remove('fa-times-circle');
+        icono.classList.add('fa-bars');
+        hamburguer.style.background = '#2b2924';
+    }
+}
