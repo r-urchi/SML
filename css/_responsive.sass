@@ -5,7 +5,10 @@
     .nav-desktop
         display: flex
 
-    .contenedor-estudio, .contenedor-servicios, .contenedor-clientes
+    .contenedor-estudio
+        height: 320px
+
+    .contenedor-servicios, .contenedor-clientes
         height: 500px
 
     .header
@@ -17,7 +20,7 @@
             justify-content: center
             align-items: center
             flex-direction: column
-            background: #2b2924
+            background: #000000
             .portada__img
                 width: 380px
                 margin: 100px 0 100px 0
@@ -39,18 +42,25 @@
 
     .estudio__info
         align-items: flex-start
+        h2
+            margin-bottom: 45px
         p
-            font-size: 20px
+            font-size: 18px
 
-    .contenedor-servicios h2
-        width: 80%
+    .estudio__info, .contenedor-servicios h2, .clientes__titulo-desktop
+        width: 85%
 
     .servicios__item-contenedor
         width: 80%
         flex-direction: row
+        justify-content: space-between
         .servicios__item
             width: 30%
-            margin: 0 10px
+            padding: 0
+            width: 350px
+            height: 320px
+            ul
+                width: 100%
 
     .clientes__card
         width: 80%
@@ -65,7 +75,6 @@
             padding: 3px
 
     .clientes__titulo-desktop
-        width: 80%
         font-size: 25px
         font-weight: 400
         margin-top: 35px
