@@ -262,7 +262,7 @@ input[type=number]::-webkit-outer-spin-button {
   width: 70%;
 }
 .servicios__item-contenedor ul li {
-  font-size: 16px;
+  font-size: 15px;
   font-weight: normal;
   color: #efefef;
   list-style: square;
