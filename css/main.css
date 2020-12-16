@@ -46,7 +46,7 @@ input[type=number]::-webkit-outer-spin-button {
   display: none;
   justify-content: flex-end;
   align-items: center;
-  background: #2b2924;
+  background: #575656;
   box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.2);
   position: relative;
 }
@@ -188,9 +188,12 @@ input[type=number]::-webkit-outer-spin-button {
   font-weight: 400;
   font-family: "Open Sans", sans-serif;
 }
-.estudio__info p {
+.estudio__info .estudio__descripcion {
   font-size: 16px;
-  text-align: center;
+  list-style: square;
+}
+.estudio__info .estudio__descripcion li {
+  margin: 5px 15px;
 }
 
 .contenedor-servicios {
@@ -224,11 +227,17 @@ input[type=number]::-webkit-outer-spin-button {
   height: 100%;
   margin-bottom: 20px;
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
+  align-content: space-around;
+}
+.servicios__item-contenedor .servicios__item .servicios__icono-titulo {
+  width: 140px;
+  height: 100%;
+  display: flex;
   align-items: center;
   flex-direction: column;
 }
-.servicios__item-contenedor .servicios__item div {
+.servicios__item-contenedor .servicios__item .servicios__icono-titulo span {
   width: 80px;
   height: 80px;
   background: #fab529;
@@ -240,7 +249,7 @@ input[type=number]::-webkit-outer-spin-button {
   justify-content: center;
   align-items: center;
 }
-.servicios__item-contenedor .servicios__item div i {
+.servicios__item-contenedor .servicios__item .servicios__icono-titulo span i {
   font-size: 45px;
 }
 .servicios__item-contenedor .servicios__item h3 {
@@ -248,16 +257,15 @@ input[type=number]::-webkit-outer-spin-button {
   font-weight: normal;
   color: #efefef;
 }
-.servicios__item-contenedor .servicios__item ul {
-  margin: 15px 10px;
+.servicios__item-contenedor ul {
+  margin: 15px 10px 15px 25px;
   width: 70%;
-  text-align: center;
 }
-.servicios__item-contenedor .servicios__item ul li {
+.servicios__item-contenedor ul li {
   font-size: 16px;
   font-weight: normal;
   color: #efefef;
-  list-style: none;
+  list-style: square;
 }
 
 .contenedor-clientes {
@@ -485,27 +493,37 @@ input[type=number]::-webkit-outer-spin-button {
   .estudio__info h2 {
     margin-bottom: 45px;
   }
-  .estudio__info p {
+  .estudio__info .estudio__descripcion {
     font-size: 18px;
+  }
+  .estudio__info .estudio__descripcion li {
+    margin: 5px 60px;
   }
 
   .estudio__info, .contenedor-servicios h2, .clientes__titulo-desktop {
     width: 85%;
   }
 
+  .contenedor-servicios {
+    padding-bottom: 0;
+  }
+
   .servicios__item-contenedor {
-    width: 80%;
     flex-direction: row;
-    justify-content: space-between;
+    width: 80%;
   }
   .servicios__item-contenedor .servicios__item {
-    width: 30%;
-    padding: 0;
-    width: 350px;
-    height: 320px;
+    width: 500px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.6);
+    margin: 10px;
+    padding: 20px;
   }
   .servicios__item-contenedor .servicios__item ul {
     width: 100%;
+    margin-left: 30px;
   }
 
   .clientes__card {

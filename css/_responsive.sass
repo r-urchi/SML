@@ -44,23 +44,33 @@
         align-items: flex-start
         h2
             margin-bottom: 45px
-        p
+        .estudio__descripcion
             font-size: 18px
+            li
+                margin: 5px 60px
 
     .estudio__info, .contenedor-servicios h2, .clientes__titulo-desktop
         width: 85%
 
+    .contenedor-servicios
+        padding-bottom: 0
+
     .servicios__item-contenedor
-        width: 80%
         flex-direction: row
-        justify-content: space-between
+        width: 80%
         .servicios__item
-            width: 30%
-            padding: 0
-            width: 350px
-            height: 320px
+            width: 500px
+            height: 100%
+            display: flex
+            justify-content: center
+            // align-content: space-between
+            background: rgba(0, 0, 0, .6)
+            margin: 10px
+            padding: 20px
             ul
                 width: 100%
+                margin-left: 30px
+
 
     .clientes__card
         width: 80%
