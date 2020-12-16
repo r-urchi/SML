@@ -513,7 +513,7 @@ input[type=number]::-webkit-outer-spin-button {
     width: 80%;
   }
   .servicios__item-contenedor .servicios__item {
-    width: 500px;
+    width: 33%;
     height: 100%;
     display: flex;
     justify-content: center;
@@ -524,6 +524,9 @@ input[type=number]::-webkit-outer-spin-button {
   .servicios__item-contenedor .servicios__item ul {
     width: 100%;
     margin-left: 30px;
+  }
+  .servicios__item-contenedor .servicios__item .servicios__icono-titulo {
+    width: 250px;
   }
 
   .clientes__card {
