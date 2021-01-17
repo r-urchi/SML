@@ -43,7 +43,7 @@
             </div>
         </div>
 
-        <div class="contacto contenedor-contacto">
+        <div class="contenedor-portada-mobile">
 
             <div class="nav">
                 <div class="nav__logo">
@@ -69,38 +69,11 @@
                 </div>
             </div>
 
-
-            <div class="contacto__datos" id="contacto">
-                <p>CONSULTANOS POR ASESORAMIENTO PERSONALIZADO</p>
+            <div class="portada-titulo">
+                <h2>PROFESIONALISMO, CONFIANZA & CALIDAD</h2>
             </div>
 
-            <form class="formulario" action="contacto.php" method="POST" data-netlify="true"> 
-
-                <div class="formulario__contenedor">
-        
-
-                    <div class="formulario__grupo nombre">
-                        <input type="text" name="nombre" id="" placeholder="Nombre" maxlength="30" required>
-                    </div>    
-                    <div class="formulario__grupo email">
-                        <input type="email" name="email" id="" placeholder="E-mail" required>
-                    </div>  
-                    <div class="formulario__grupo telefono">
-                        <input type="number" name="telefono" id="" placeholder="Teléfono" required>
-                    </div>  
-                    <div class="formulario__grupo textarea">  
-                        <textarea name="consulta" id="" rows="3" placeholder="Consulta" maxlength="300" required></textarea>
-                    </div>
-
-                    <button type="submit" class="formulario__boton">Enviar</button>
-
-                    <a href="https://api.whatsapp.com/send?text=&phone=541168524426" target="_blank" class="btn-whatsapp"><i class="fab fa-whatsapp"></i>CONTACTANOS POR WHATSAPP</a>
-        
-                </div>
-        
-            </form>
-
-            <div class="contacto__datos foot">
+            <div class="portada__datos foot">
                 <p>Laprida 177, piso 2°, Of."6", <br/> (1642) San Isidro, Prov. Bs. As. <br/>
                 Tel. 5368-0453/0529<br/>
                 Cel. +5411 68524426</p>
@@ -118,13 +91,39 @@
         <div class="estudio__info">
             <h2 class="estudio__titulo">NUESTRO ESTUDIO</h2>
 
-                <ul class="estudio__descripcion">
-                    <li>Somos un estudio jurídico boutique especializado en derecho Civil, Comercial y Laboral.</li>
-                    <li>Nos caracterizamos por brindar un servicio personalizado de excelencia. Nuestros Pilares son el profesionalismo, la cercanía y la confianza con nuestros clientes.</li>
-                    <li>Contamos con Matrículas en Provincia de Buenos Aires y Capital Federal.</li>
-                </ul>
+                <p class="estudio__descripcion">
+                    Somos un estudio jurídico boutique especializado en derecho Civil, Comercial y Laboral.
+                    Nos caracterizamos por brindar un servicio personalizado de excelencia. Nuestros Pilares son el profesionalismo, la cercanía y la confianza con nuestros clientes.
+                    Contamos con Matrículas en Provincia de Buenos Aires y Capital Federal.
+                </p>
               
         </div>
+    </section>
+
+    <section class="pilares contenedor-pilares">
+        <div class="pilares__contenedor">
+            <h2 class="estudio__titulo">PILARES</h2>
+
+            <div class="pilares__iconos">
+                <div class="pilares__icono-titulo">
+                    <span><i class="fas fa-user-tie"></i></span>
+                    <p>Profesionalismo</p>
+                </div>
+                <div class="pilares__icono-titulo">
+                    <span><i class="fas fa-handshake"></i></span>
+                    <p>Confianza</p>
+                </div>
+                <div class="pilares__icono-titulo">
+                    <span><i class="fas fa-award"></i></span>
+                    <p>Calidad</p>
+                </div>
+                <div class="pilares__icono-titulo">
+                    <span><i class="fas fa-user-check"></i></span>
+                    <p>Asesoramiendo personalizado</p>
+                </div>
+            </div>
+        </div>
+
     </section>
 
     <section class="servicios contenedor-servicios" id="servicios">
@@ -187,7 +186,7 @@
 
         <div class="clientes__card">
 
-            <h2 class="clientes__titulo">CLIENTES</h2>
+            <h2 class="clientes__titulo">ALGUNOS CLIENTES QUE CONFIARON EN NOSOTROS</h2>
 
             <ul class="clientes__mobile">
                 <li>Estoicos Financial Group SRL</li>
@@ -225,6 +224,40 @@
                 </ul>
             </div>
         </div>
+    </section>
+
+    <section class="contacto contenedor-contacto">
+
+            <div class="contacto__datos" id="contacto">
+                <p>CONSULTANOS POR ASESORAMIENTO PERSONALIZADO</p>
+            </div>
+
+            <form class="formulario" action="contacto.php" method="POST" data-netlify="true"> 
+
+                <div class="formulario__contenedor">
+        
+
+                    <div class="formulario__grupo nombre">
+                        <input type="text" name="nombre" id="" placeholder="Nombre" maxlength="30" required>
+                    </div>    
+                    <div class="formulario__grupo email">
+                        <input type="email" name="email" id="" placeholder="E-mail" required>
+                    </div>  
+                    <div class="formulario__grupo telefono">
+                        <input type="number" name="telefono" id="" placeholder="Teléfono" required>
+                    </div>  
+                    <div class="formulario__grupo textarea">  
+                        <textarea name="consulta" id="" rows="3" placeholder="Consulta" maxlength="300" required></textarea>
+                    </div>
+
+                    <button type="submit" class="formulario__boton">Enviar</button>
+
+                    <a href="https://api.whatsapp.com/send?text=&phone=541168524426" target="_blank" class="btn-whatsapp"><i class="fab fa-whatsapp"></i>CONTACTANOS POR WHATSAPP</a>
+        
+                </div>
+        
+            </form>
+
     </section>
 
     <footer class="footer">
