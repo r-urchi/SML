@@ -1,5 +1,5 @@
 @media screen and (min-width: 950px)
-    .nav, .foot, .estudio__img, .clientes__mobile, .clientes__titulo, .footer__datos
+    .nav, .foot, .estudio__img, .clientes__mobile, .clientes__titulo, .estudio__titulo-mobile, .footer__datos
         display: none
 
     .nav-desktop
@@ -33,7 +33,7 @@
                     width: 100%
             .portada__datos
                 width: 90%
-                margin: 20px 0 
+                margin-bottom: 80px 
                 p
                     color: #ffffff
                     padding: 10px 30px
@@ -45,6 +45,18 @@
     
     .formulario
         margin-bottom: 35px
+        width: 60%
+
+    .formularo__telYmail
+        width: 90%
+        display: flex
+        justify-content: space-between
+        align-items: center
+        .email, .telefono
+            width: 45%
+
+    .textarea textarea
+        height: 300px
 
     .estudio__info
         align-items: flex-start
@@ -67,7 +79,9 @@
                 margin-bottom: 20px
         p
             font-size: 25px
-            
+    
+    .pilares__iconos
+        padding-top: 70px        
 
     .contenedor-servicios
         padding-bottom: 0
@@ -103,12 +117,29 @@
         ul li
             padding: 3px
 
-    .clientes__titulo-desktop
+    .clientes__titulo-desktop, .estudio__titulo-desktop
         font-size: 25px
         font-weight: 400
         margin-top: 35px
         color: #efefef
+    
+    .pilares-titulo
+        width: 85%
+        display: flex
+        justify-content: flex-start
+        padding-top: 35px
 
+    .contacto__datos
+        width: 85%
+        display: flex
+        justify-content: flex-start
+        h2
+            font-size: 25px
+            font-weight: 400
+            margin-top: 35px
+
+    .contenedor-pilares
+        padding-bottom: 50px
 
     .footer__contenedor
         width: 80%

@@ -102,8 +102,13 @@
     </section>
 
     <section class="pilares contenedor-pilares">
+
+        <div class="pilares-titulo">
+            <h2 class="estudio__titulo-desktop">PILARES</h2>
+        </div>
+
         <div class="pilares__contenedor">
-            <h2 class="estudio__titulo">PILARES</h2>
+            <h2 class="estudio__titulo-mobile">PILARES</h2>
 
             <div class="pilares__iconos">
                 <div class="pilares__icono-titulo">
@@ -230,25 +235,27 @@
     <section class="contacto contenedor-contacto">
 
             <div class="contacto__datos" id="contacto">
-                <p>CONSULTANOS POR ASESORAMIENTO PERSONALIZADO</p>
+                <h2>CONSULTANOS POR ASESORAMIENTO PERSONALIZADO</h2>
             </div>
 
             <form class="formulario" action="contacto.php" method="POST" data-netlify="true"> 
 
                 <div class="formulario__contenedor">
         
-
                     <div class="formulario__grupo nombre">
-                        <input type="text" name="nombre" id="" placeholder="Nombre" maxlength="30" required>
+                        <input type="text" name="nombre" id="" placeholder="Nombre*" maxlength="30" required>
                     </div>    
-                    <div class="formulario__grupo email">
-                        <input type="email" name="email" id="" placeholder="E-mail" required>
-                    </div>  
-                    <div class="formulario__grupo telefono">
-                        <input type="number" name="telefono" id="" placeholder="Teléfono" required>
-                    </div>  
+
+                    <div class="formularo__telYmail">
+                        <div class="formulario__grupo email">
+                            <input type="email" name="email" id="" placeholder="E-mail*" required>
+                        </div>  
+                        <div class="formulario__grupo telefono">
+                            <input type="number" name="telefono" id="" placeholder="Teléfono*" required>
+                        </div>  
+                    </div>
                     <div class="formulario__grupo textarea">  
-                        <textarea name="consulta" id="" rows="3" placeholder="Consulta" maxlength="300" required></textarea>
+                        <textarea name="consulta" id="" rows="3" placeholder="Consulta*" maxlength="300" required></textarea>
                     </div>
 
                     <button type="submit" class="formulario__boton">Enviar</button>

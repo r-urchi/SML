@@ -273,7 +273,7 @@ input[type=number]::-webkit-outer-spin-button {
   margin: 30px 0;
   color: #ffffff;
 }
-.contenedor-pilares .pilares__contenedor h2 {
+.contenedor-pilares .pilares__contenedor .estudio__titulo-mobile {
   font-size: 25px;
   margin: 45px 0;
   font-weight: 400;
@@ -287,7 +287,7 @@ input[type=number]::-webkit-outer-spin-button {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  padding-bottom: 100px;
+  padding-bottom: 70px;
 }
 .contenedor-pilares .pilares__contenedor .pilares__iconos .pilares__icono-titulo {
   width: 45%;
@@ -472,6 +472,7 @@ input[type=number]::-webkit-outer-spin-button {
   font-size: 16px;
   transition: all 0.3s ease;
   cursor: pointer;
+  box-shadow: 3px 6px 11px 0px rgba(0, 0, 0, 0.49);
 }
 .formulario__boton:hover {
   background: #b18122;
@@ -525,7 +526,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 @media screen and (min-width: 950px) {
-  .nav, .foot, .estudio__img, .clientes__mobile, .clientes__titulo, .footer__datos {
+  .nav, .foot, .estudio__img, .clientes__mobile, .clientes__titulo, .estudio__titulo-mobile, .footer__datos {
     display: none;
   }
 
@@ -569,7 +570,7 @@ input[type=number]::-webkit-outer-spin-button {
   }
   .header .portada .portada__datos {
     width: 90%;
-    margin: 20px 0;
+    margin-bottom: 80px;
   }
   .header .portada .portada__datos p {
     color: #ffffff;
@@ -584,6 +585,21 @@ input[type=number]::-webkit-outer-spin-button {
 
   .formulario {
     margin-bottom: 35px;
+    width: 60%;
+  }
+
+  .formularo__telYmail {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .formularo__telYmail .email, .formularo__telYmail .telefono {
+    width: 45%;
+  }
+
+  .textarea textarea {
+    height: 300px;
   }
 
   .estudio__info {
@@ -615,6 +631,10 @@ input[type=number]::-webkit-outer-spin-button {
   }
   .contenedor-pilares .pilares__contenedor .pilares__iconos .pilares__icono-titulo p {
     font-size: 25px;
+  }
+
+  .pilares__iconos {
+    padding-top: 70px;
   }
 
   .contenedor-servicios {
@@ -657,11 +677,33 @@ input[type=number]::-webkit-outer-spin-button {
     padding: 3px;
   }
 
-  .clientes__titulo-desktop {
+  .clientes__titulo-desktop, .estudio__titulo-desktop {
     font-size: 25px;
     font-weight: 400;
     margin-top: 35px;
     color: #efefef;
+  }
+
+  .pilares-titulo {
+    width: 85%;
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 35px;
+  }
+
+  .contacto__datos {
+    width: 85%;
+    display: flex;
+    justify-content: flex-start;
+  }
+  .contacto__datos h2 {
+    font-size: 25px;
+    font-weight: 400;
+    margin-top: 35px;
+  }
+
+  .contenedor-pilares {
+    padding-bottom: 50px;
   }
 
   .footer__contenedor {
