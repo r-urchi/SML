@@ -1,9 +1,17 @@
 .contenedor-contacto
     width: 100%
     height: 100%
+    display: -webkit-box
+    display: -ms-flexbox
     display: flex
+    -ms-flex-pack: distribute
     justify-content: space-around
+    -webkit-box-align: center
+    -ms-flex-align: center
     align-items: center
+    -webkit-box-orient: vertical
+    -webkit-box-direction: normal
+    -ms-flex-direction: column
     flex-direction: column
     background: #efefef
 
@@ -12,9 +20,18 @@
     padding: 20px 0
 
 .formulario__contenedor
+    display: -webkit-box
+    display: -ms-flexbox
     display: flex
+    -webkit-box-pack: center
+    -ms-flex-pack: center
     justify-content: center
+    -webkit-box-align: center
+    -ms-flex-align: center
     align-items: center
+    -webkit-box-orient: vertical
+    -webkit-box-direction: normal
+    -ms-flex-direction: column
     flex-direction: column
 
 .formulario__grupo
@@ -37,9 +54,18 @@
 
 .formularo__telYmail
     width: 90%
+    display: -webkit-box
+    display: -ms-flexbox
     display: flex
+    -webkit-box-pack: center
+    -ms-flex-pack: center
     justify-content: center
+    -webkit-box-align: center
+    -ms-flex-align: center
     align-items: center
+    -webkit-box-orient: vertical
+    -webkit-box-direction: normal
+    -ms-flex-direction: column
     flex-direction: column
     .email, .telefono
         width: 100%
@@ -52,8 +78,11 @@
     border-radius: 5px
     margin: 10px 0
     font-size: 16px
+    -webkit-transition: all .3s ease
+    -o-transition: all .3s ease
     transition: all .3s ease
     cursor: pointer
+    -webkit-box-shadow: 3px 6px 11px 0px rgba(0,0,0,0.49)
     box-shadow: 3px 6px 11px 0px rgba(0,0,0,0.49)
     &:hover
         background: #b18122

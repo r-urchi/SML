@@ -68,23 +68,37 @@ input[type=number]::-webkit-outer-spin-button {
   width: 100%;
   height: 80px;
   display: none;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
   justify-content: flex-end;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   background: #2b2924;
+  -webkit-box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.2);
   box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.2);
   position: relative;
 }
 .nav-desktop .nav-desktop__lista {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
   flex-direction: row;
   list-style: none;
   margin-right: 50px;
+  -webkit-transition: 0.3s all ease;
+  -o-transition: 0.3s all ease;
   transition: 0.3s all ease;
 }
 .nav-desktop .nav-desktop__lista li a {
   color: #ffffff;
   text-decoration: none;
   padding: 10px;
+  -webkit-transition: 0.3s all ease;
+  -o-transition: 0.3s all ease;
   transition: 0.3s all ease;
 }
 .nav-desktop .nav-desktop__lista li a:hover {
@@ -92,10 +106,16 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .nav-mobile {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
   justify-content: flex-end;
   height: 80px;
   width: 100%;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   padding: 0 10px;
 }
@@ -107,11 +127,21 @@ input[type=number]::-webkit-outer-spin-button {
   width: 100%;
   height: 70vh;
   padding: 80px 0 20px 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
   justify-content: space-evenly;
+  -webkit-clip-path: circle(0% at 100% 0);
   clip-path: circle(0% at 100% 0);
   font-weight: 300;
+  -webkit-transition: ease-in-out 0.5s;
+  -o-transition: ease-in-out 0.5s;
   transition: ease-in-out 0.5s;
 }
 .nav-mobile .enlaces-mobile li {
@@ -120,6 +150,8 @@ input[type=number]::-webkit-outer-spin-button {
 .nav-mobile .enlaces-mobile li a {
   color: #ffffff;
   text-decoration: none;
+  -webkit-transition: 0.3s all ease;
+  -o-transition: 0.3s all ease;
   transition: 0.3s all ease;
 }
 .nav-mobile .enlaces-mobile li a:hover {
@@ -128,13 +160,21 @@ input[type=number]::-webkit-outer-spin-button {
 .nav-mobile .hamburguer {
   width: 50px;
   height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   background: #2b2924;
   border-radius: 10px;
   z-index: 100;
   cursor: pointer;
+  -webkit-transition: 0.5s all ease;
+  -o-transition: 0.5s all ease;
   transition: 0.5s all ease;
 }
 .nav-mobile .hamburguer i {
@@ -142,13 +182,20 @@ input[type=number]::-webkit-outer-spin-button {
   font-size: 30px;
 }
 .nav-mobile .menuDos {
+  -webkit-clip-path: circle(150% at 100% 0);
   clip-path: circle(150% at 100% 0);
 }
 
 .header {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 .header .portada {
@@ -158,8 +205,14 @@ input[type=number]::-webkit-outer-spin-button {
 .nav {
   width: 100%;
   height: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   padding: 20px;
   margin-top: 35px;
@@ -169,8 +222,14 @@ input[type=number]::-webkit-outer-spin-button {
 .nav__logo {
   width: 100px;
   height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   background: #000000;
 }
@@ -207,9 +266,17 @@ input[type=number]::-webkit-outer-spin-button {
 .contenedor-portada-mobile {
   width: 100%;
   height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-pack: distribute;
   justify-content: space-around;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
   background-image: url(../img/law-firm.jpg);
   background-repeat: no-repeat;
@@ -220,9 +287,18 @@ input[type=number]::-webkit-outer-spin-button {
 .contenedor-estudio {
   width: 100%;
   height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
   background: #efefef;
   padding: 30px 0 45px 0;
@@ -231,6 +307,8 @@ input[type=number]::-webkit-outer-spin-button {
 .estudio__img {
   width: 100%;
   display: none;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   margin: 20px 0;
 }
@@ -240,9 +318,18 @@ input[type=number]::-webkit-outer-spin-button {
 
 .estudio__info {
   width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
 }
 .estudio__info h2 {
@@ -258,10 +345,18 @@ input[type=number]::-webkit-outer-spin-button {
 
 .contenedor-pilares {
   width: 100%;
-  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
   background-image: url(../img/pilares.jpg);
   background-repeat: no-repeat;
@@ -284,17 +379,33 @@ input[type=number]::-webkit-outer-spin-button {
 .contenedor-pilares .pilares__contenedor .pilares__iconos {
   width: 100%;
   height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   padding-bottom: 70px;
 }
 .contenedor-pilares .pilares__contenedor .pilares__iconos .pilares__icono-titulo {
   width: 45%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
   text-align: center;
 }
@@ -306,8 +417,14 @@ input[type=number]::-webkit-outer-spin-button {
   width: 70px;
   height: 70px;
   margin: 15px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 .contenedor-pilares .pilares__contenedor .pilares__iconos .pilares__icono-titulo span i {
@@ -319,9 +436,18 @@ input[type=number]::-webkit-outer-spin-button {
   width: 100%;
   height: 100%;
   padding-bottom: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
   background: #2b2924;
   color: #efefef;
@@ -336,24 +462,45 @@ input[type=number]::-webkit-outer-spin-button {
 
 .servicios__item-contenedor {
   width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
 }
 .servicios__item-contenedor .servicios__item {
   width: 100%;
   height: 100%;
   margin-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -ms-flex-line-pack: distribute;
   align-content: space-around;
 }
 .servicios__item-contenedor .servicios__item .servicios__icono-titulo {
   width: 140px;
   height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
 }
 .servicios__item-contenedor .servicios__item .servicios__icono-titulo span {
@@ -364,8 +511,14 @@ input[type=number]::-webkit-outer-spin-button {
   margin: 15px 0;
   border-radius: 50%;
   text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 .servicios__item-contenedor .servicios__item .servicios__icono-titulo span i {
@@ -390,9 +543,18 @@ input[type=number]::-webkit-outer-spin-button {
 .contenedor-clientes {
   width: 100%;
   height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
   background-image: url(../img/clientes.jpg);
   background-repeat: no-repeat;
@@ -425,9 +587,17 @@ input[type=number]::-webkit-outer-spin-button {
 .contenedor-contacto {
   width: 100%;
   height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-pack: distribute;
   justify-content: space-around;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
   background: #efefef;
 }
@@ -438,9 +608,18 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .formulario__contenedor {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
 }
 
@@ -467,9 +646,18 @@ input[type=number]::-webkit-outer-spin-button {
 
 .formularo__telYmail {
   width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
 }
 .formularo__telYmail .email, .formularo__telYmail .telefono {
@@ -484,8 +672,11 @@ input[type=number]::-webkit-outer-spin-button {
   border-radius: 5px;
   margin: 10px 0;
   font-size: 16px;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
   cursor: pointer;
+  -webkit-box-shadow: 3px 6px 11px 0px rgba(0, 0, 0, 0.49);
   box-shadow: 3px 6px 11px 0px rgba(0, 0, 0, 0.49);
 }
 .formulario__boton:hover {
@@ -504,15 +695,24 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 
 .footer__contenedor {
   width: 80%;
   height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-pack: distribute;
   justify-content: space-around;
   background: #d5d1d1;
 }
@@ -520,8 +720,14 @@ input[type=number]::-webkit-outer-spin-button {
 .footer__datos {
   width: 70%;
   color: #575656;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 .footer__datos p {
@@ -531,8 +737,14 @@ input[type=number]::-webkit-outer-spin-button {
 .footer__img {
   width: 25%;
   margin: 30px 0 30px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 .footer__img img {
@@ -545,6 +757,8 @@ input[type=number]::-webkit-outer-spin-button {
   }
 
   .nav-desktop {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
   }
 
@@ -570,9 +784,18 @@ input[type=number]::-webkit-outer-spin-button {
   .header .portada {
     width: 50%;
     height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     background: #2b2924;
   }
@@ -599,6 +822,8 @@ input[type=number]::-webkit-outer-spin-button {
   }
 
   .estudio__info {
+    -webkit-box-align: start;
+    -ms-flex-align: start;
     align-items: flex-start;
   }
   .estudio__info h2 {
@@ -643,6 +868,9 @@ input[type=number]::-webkit-outer-spin-button {
   }
 
   .servicios__item-contenedor {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
     flex-direction: row;
     width: 80%;
     margin-bottom: 70px;
@@ -650,7 +878,11 @@ input[type=number]::-webkit-outer-spin-button {
   .servicios__item-contenedor .servicios__item {
     width: 33%;
     height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     background: rgba(0, 0, 0, 0.6);
     margin: 10px;
@@ -669,7 +901,11 @@ input[type=number]::-webkit-outer-spin-button {
   }
 
   .clientes__desktop {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     height: 250px;
     padding: 35px 0 0 0;
@@ -681,8 +917,14 @@ input[type=number]::-webkit-outer-spin-button {
 
   .clientes-titulo {
     width: 85%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
     justify-content: flex-start;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
   }
 
@@ -701,14 +943,22 @@ input[type=number]::-webkit-outer-spin-button {
 
   .pilares-titulo {
     width: 85%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
     justify-content: flex-start;
     padding-top: 35px;
   }
 
   .contacto__datos {
     width: 85%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
     justify-content: flex-start;
   }
   .contacto__datos h2 {
@@ -724,9 +974,18 @@ input[type=number]::-webkit-outer-spin-button {
 
   .formularo__telYmail {
     width: 90%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
     flex-direction: row;
   }
   .formularo__telYmail .email, .formularo__telYmail .telefono {
@@ -739,12 +998,23 @@ input[type=number]::-webkit-outer-spin-button {
 
   .footer__contenedor {
     width: 80%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: row-reverse;
     flex-direction: row-reverse;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
     justify-content: flex-end;
   }
   .footer__contenedor .footer__datos-desktop {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
     justify-content: flex-start;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     width: 70%;
     margin: 0;
