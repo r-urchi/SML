@@ -44,10 +44,9 @@ input[type=number]::-webkit-outer-spin-button {
 .btn-whatsapp {
   width: 45px;
   height: 45px;
-  padding: 7px;
+  padding: 8px;
   text-align: center;
   background: none;
-  font-size: 20px;
   cursor: pointer;
   position: fixed;
   background: #25D366;
@@ -60,8 +59,29 @@ input[type=number]::-webkit-outer-spin-button {
   font-size: 30px;
   line-height: 30px;
 }
+.btn-whatsapp span {
+  font-size: 12px;
+  display: none;
+  margin-right: 20px;
+}
 .btn-whatsapp:hover {
-  background: #075E54;
+  width: 245px;
+  border-radius: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  text-decoration: none;
+}
+.btn-whatsapp:hover span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .nav-desktop {
